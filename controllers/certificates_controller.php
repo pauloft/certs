@@ -2,6 +2,10 @@
 class CertificatesController extends AppController {
 
 	var $name = 'Certificates';
+	
+	function test() {
+	
+	}
 
 	function index() {
 		$this->Certificate->recursive = 0;
@@ -58,5 +62,7 @@ class CertificatesController extends AppController {
 		$this->Session->setFlash(__('Certificate was not deleted', true));
 		$this->redirect(array('action' => 'index'));
 	}
+	
+	
 }
 ?>
